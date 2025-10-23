@@ -19,9 +19,9 @@ function Cgenerator() {
     setpassword(pass);
   }, [length, numberAllowed, characterAllowed]);
 
-  useEffect( () => {
-    generatePassword()
-  },[length, numberAllowed, characterAllowed])
+  // useEffect( () => {
+  //   generatePassword()
+  // },[length, numberAllowed, characterAllowed])
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
